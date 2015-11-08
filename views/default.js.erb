@@ -1,0 +1,4 @@
+var parser = new DOMParser();
+var alertDoc = parser.parseFromString("<%= @document.build_escaped %>", "application/xml");
+
+navigationDocument.presentModal(alertDoc);
